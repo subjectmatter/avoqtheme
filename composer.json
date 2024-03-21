@@ -1,0 +1,13 @@
+{
+    "name": "yurisevictsm/avoqtheme",
+    "description": "Custom theme for Avoq",
+    "type": "drupal-custom-theme",
+    "license": "GPL-2.0-or-later",
+    "authors": [
+        {
+            "name": "Alan Yurisevic",
+            "email": "ayurisevic@teamavoq.com"
+        }
+    ],
+    "require": {}
+}
