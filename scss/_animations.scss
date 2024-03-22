@@ -1,0 +1,48 @@
+.animated-heading{
+  display: block;
+  .animated-heading-line1, .animated-heading-line2{
+    position: relative;
+    overflow: hidden;
+    display: inline-block;
+    padding:0 1rem 0.2rem 0.25rem;
+  }
+  .animated-heading-text{
+    width: 100%;
+    height:100%;
+    display: block;
+    position: relative;
+    z-index: 1;
+    color:$white;
+    transform: translateY(100%);
+    transition: .5s transform cubic-bezier(0.33,1,0.68,1) 0.25s;
+  }
+  .animated-heading-bg{
+    width: 100%;
+    height:100%;
+    background-color: $red;
+    position: absolute;
+    top:0;
+    z-index: 0;
+    left:0;
+    transform: translateX(-100%);
+    transition: .5s transform cubic-bezier(0.33,1,0.68,1);
+  }
+  .animated-heading-line2{
+    margin-left:2rem;
+    margin-top: -1rem;
+    .animated-heading-text{
+      transition-delay: 1s;
+    }
+    .animated-heading-bg{
+      transition-delay: 1s;
+    }
+  }
+  &.active{
+    .animated-heading-text{
+      transform: translateY(0);
+    }
+    .animated-heading-bg{
+      transform: translateX(0);
+    }
+  }
+}

@@ -33,20 +33,22 @@ h4,
 h5,
 h6{
     //font-family: $font__title;
+    font-weight: bold;
 }
 
 h1{
     @include media-breakpoint-up(md) {
-        
+      font-size:3.5rem;
     }
 }
 h2{
+  margin-bottom: 1rem;
     @include media-breakpoint-up(md) {
-
+      font-size:3rem;
     }
 }
 h3{
-    
+
 }
 
 
