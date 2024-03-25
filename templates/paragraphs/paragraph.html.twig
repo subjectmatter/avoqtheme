@@ -38,33 +38,18 @@
  * @ingroup themeable
  */
 #}
-{% set aniClass = content.field_heading_animation|render|striptags|trim|clean_class %}
 {%
   set classes = [
     'paragraph',
     'paragraph--type--' ~ paragraph.bundle|clean_class,
     view_mode ? 'paragraph--view-mode--' ~ view_mode|clean_class,
-    not paragraph.isPublished() ? 'paragraph--unpublished',
-    'animated-heading',
-    aniClass
+    not paragraph.isPublished() ? 'paragraph--unpublished'
   ]
 %}
 {% block paragraph %}
-<div class="container">
-  <h2{{ attributes.addClass(classes) }}>
+  <div{{ attributes.addClass(classes) }}>
     {% block content %}
-      <div class="animated-heading-line1">
-        <span class="animated-heading-text">{{ content.field_heading_text|render|striptags|trim }}</span>
-        <span class="animated-heading-bg"></span>
-      </div>
-      {% if content.field_heading_text_line_2|render|striptags|trim is not empty %}
-        <div class="clearfix"></div>
-        <div class="animated-heading-line2 delayed">
-          <span class="animated-heading-text">{{ content.field_heading_text_line_2|render|striptags|trim }}</span>
-          <span class="animated-heading-bg"></span>
-        </div>
-      {% endif %}
+      <div class="container">{{ content }}</div>
     {% endblock %}
-  </h2>
-</div>
+  </div>
 {% endblock paragraph %}

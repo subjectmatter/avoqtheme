@@ -4,6 +4,10 @@
     $(document).ready(function () {
 
       scrollTrigger('.animated-heading');
+      scrollTrigger('.paragraph--type--animated-section',
+      {
+        rootMargin: '-200px'
+      });
 
     });
 
