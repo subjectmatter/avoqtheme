@@ -1,6 +1,16 @@
+:root {
+  --scale: 0.1;
+  --space: 8vmin;
+}
+@media (prefers-reduced-motion) {
+  :root {
+    --scale: 0;
+  }
+}
+
 .field--name-field-content{
   > .field__item{
-    margin-bottom: 3rem;
+
   }
 }
 .region-content{
