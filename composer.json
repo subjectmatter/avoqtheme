@@ -1,6 +1,6 @@
 {
     "name": "avoq/avoq-drupal-theme",
-    "description": "Custom theme for Avoq",
+    "description": "Custom drupal theme for Avoq",
     "type": "drupal-custom-theme",
     "license": "GPL-2.0-or-later",
     "authors": [
