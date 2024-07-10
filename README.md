@@ -4,6 +4,8 @@
 
 ## Development.
 
+Available at https://packagist.org/packages/avoq/avoq-drupal-theme
+
 ### CSS compilation.
 
 Run npm install, then gulp
